@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Articles</title>
+</head>
+<style type="text/css">
+a:link {
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+</style>
+<body>
+
+<h1 style="">Articles</h1>
+
+<p>
+{% for t in titles %}
+  <a href="article/{{links[loop.index0]}}">{{t}}</a><br/><br/>{% endfor %}
+</p>
+
+</body>
+</html>
