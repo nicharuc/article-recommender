@@ -41,3 +41,4 @@ if __name__ == "__main__":
 
     gloves = load_glove(glove_filename)
     articles = load_articles(articles_dirname, gloves)
+    app.run(host='0.0,0,0', port=8080)
